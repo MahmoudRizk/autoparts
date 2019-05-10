@@ -1,0 +1,17 @@
+<odoo>
+    <template id="website_extend_search_box" inherit_id="website.website_search_box">
+      <xpath expr="//div[@class='input-group']" position="replace">
+        <div class="input-group">
+          <div class="oe_search">
+              <input type="text" name="search" class="search-query form-control oe_search_box" placeholder="Product..."/>
+              <span class="oe_search">
+                <input type="text" name="search" class="search-query form-control oe_search_box" placeholder="Category..."/>
+              </span>
+          </div>
+          <span class="input-group-btn">
+             <button class="sync_button btn btn-default oe_search_button" type="button">Search</button>
+          </span>
+        </div>
+      </xpath>
+    </template>
+</odoo>
